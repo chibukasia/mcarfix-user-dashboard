@@ -14,6 +14,7 @@ import MarketPlace from './components/MarketPlace';
 import PartDealers from './components/PartDealers';
 import Problem from './components/Problem';
 import SubscriptionHistory from './components/SubscriptionHistory';
+import Dashboard from './components/Dashboard';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         {/* <Route exact path='/' element={<App />}/> */}
         <Route exact path='/' element={<Home />}>
+          <Route exact path='dashboard' element={<Dashboard/>} />
           <Route exact path='market_place' element={<MarketPlace />}/>
           <Route exact path='part-dealers' element={<PartDealers />}/>
           <Route exact path='problem' element={<Problem />}/>

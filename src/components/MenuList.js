@@ -53,7 +53,7 @@ function MenuList() {
             component="nav"
             // aria-labelledby="nested-list-subheader"
         >
-            <Link to={'/'}>
+            <Link to={'/dashboard'}>
                 <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
                     <ListItemText primary="Dashboard" color='white'/>
                 </ListItemButton>
@@ -68,22 +68,28 @@ function MenuList() {
                     <ListItemText primary="Problem/Symptom" color='white'/>
                 </ListItemButton>
             </Link>
-            <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
-                <ListItemText primary="Part Dealers" color='white'/>
-            </ListItemButton>
+            <Link to="/part-dealers">
+                <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
+                    <ListItemText primary="Part Dealers" color='white'/>
+                </ListItemButton>
+            </Link>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen}>
                 <ListItemText primary="Car Repairs" color='white'/>
                 {open ? <ExpandMore/> : <KeyboardArrowRightIcon/>}
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                    {/* <RadioButtonUncheckedIcon fontSize='small'/> */}
-                        <ListItemText primary="Auto Garages" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'},pl: 3 }}>
-                        <ListItemText primary="Authorized Mechanics" />
-                    </ListItemButton>
+                    <Link to={'/auto-garages'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                        {/* <RadioButtonUncheckedIcon fontSize='small'/> */}
+                            <ListItemText primary="Auto Garages" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/authorized-mechanics'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'},pl: 3 }}>
+                            <ListItemText primary="Authorized Mechanics" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen1}>
@@ -92,12 +98,16 @@ function MenuList() {
             </ListItemButton>
             <Collapse in={open1} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Register Your Car" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Service Checklist" />
-                    </ListItemButton>
+                    <Link to={'/register-car'}>
+                        <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Register Your Car" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/service-checklist'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Service Checklist" />
+                        </ListItemButton>
+                    </Link>
                     <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
                         <ListItemText primary="Purchase Part" />
                     </ListItemButton>

@@ -11,6 +11,7 @@ import SendIcon from '@mui/icons-material/Send';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Typography } from "@mui/material";
+import Feautures from "./Feautures";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -30,7 +31,7 @@ export default function ResponsiveGrid() {
           </div>
           <div className="text-div">
             <Typography>Pending Orders</Typography>
-            <Typography>70 Order(s)</Typography>
+            <Typography>70 Order(s)<span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
             {/* <ArrowForwardIcon/> */}
           </div>
         </div>
@@ -40,7 +41,7 @@ export default function ResponsiveGrid() {
           </div>
           <div className="text-div">
             <Typography>Requested Orders</Typography>
-            <Typography>70 Order(s)</Typography>
+            <Typography>70 Order(s)<span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
           </div>
         </div>
         <div className="order-div">
@@ -49,7 +50,7 @@ export default function ResponsiveGrid() {
           </div>
           <div className="text-div">
             <Typography>Accepted Orders</Typography>
-            <Typography>70 Order(s)</Typography>
+            <Typography>70 Order(s)<span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
           </div>
         </div>
         <div className="order-div">
@@ -58,7 +59,7 @@ export default function ResponsiveGrid() {
           </div>
           <div className="text-div">
             <Typography>Confirmed Orders</Typography>
-            <Typography>70 Order(s)</Typography>
+            <Typography>70 Order(s)<span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
           </div>
         </div>
         <div className="order-div">
@@ -67,13 +68,11 @@ export default function ResponsiveGrid() {
           </div>
           <div className="text-div">
             <Typography>Confirmed Orders</Typography>
-            <Typography>70 Order(s)</Typography>
+            <Typography>70 Order(s) <span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: '#ededed'}}>
-        <h1 style={{textAlign: 'center'}}>Your Number Plate Your Solution</h1>
-      </div>
+      <Feautures />
     </Box>
   );
 }

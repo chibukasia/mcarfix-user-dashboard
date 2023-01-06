@@ -15,6 +15,7 @@ import PartDealers from './components/PartDealers';
 import Problem from './components/Problem';
 import SubscriptionHistory from './components/SubscriptionHistory';
 import Dashboard from './components/Dashboard';
+import RegisterYourCar from './components/services/RegisterYourCar';
 
 
 function App() {
@@ -24,10 +25,11 @@ function App() {
         {/* <Route exact path='/' element={<App />}/> */}
         <Route exact path='/' element={<Home />}>
           <Route exact path='dashboard' element={<Dashboard/>} />
-          <Route exact path='market_place' element={<MarketPlace />}/>
+          <Route exact path='market-place' element={<MarketPlace />}/>
           <Route exact path='part-dealers' element={<PartDealers />}/>
           <Route exact path='problem' element={<Problem />}/>
           <Route exact path='subscription-history' element={<SubscriptionHistory />}/>
+          <Route exact path='register-car' element={<RegisterYourCar />}/>
         </Route>
       </Routes>
     </div>

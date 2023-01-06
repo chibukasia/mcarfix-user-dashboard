@@ -58,7 +58,7 @@ function MenuList() {
                     <ListItemText primary="Dashboard" color='white'/>
                 </ListItemButton>
             </Link>
-            <Link to="/market_place">
+            <Link to="/market-place">
                 <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
                     <ListItemText primary="Market Place" color='white'/>
                 </ListItemButton>

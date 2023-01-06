@@ -13,7 +13,7 @@ function Home() {
 
   let width;
   if (show === true) {
-    width = 20;
+    width = 15;
   } else {
     width = 2;
   }

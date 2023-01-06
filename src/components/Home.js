@@ -24,7 +24,7 @@ function Home() {
         <div className="sidebar" style={{ backgroundColor: "#1d4063", width: `${width}%` }}>
           <MenuList />
         </div>
-        <div className="content" style={{ backgroundColor: "#e5e5e5" }}>
+        <div className="content" style={{ backgroundColor: "#e5e5e5", width: `${100 - width}%` }}>
           <Outlet />
         </div>
       </div>

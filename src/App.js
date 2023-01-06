@@ -47,6 +47,7 @@ import Profile from './components/about_mcarfix/Profile';
 import Support from './components/about_mcarfix/Support';
 import TermsAndPrivacyPolicy from './components/about_mcarfix/TermsAndPrivacyPolicy';
 import UpdateProfile from './components/about_mcarfix/UpdateProfile';
+import CarZone from './components/CarZone';
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
           <Route exact path='support' element={<Support/>}/>
           <Route exact path='terms-and-privacy-policy' element={<TermsAndPrivacyPolicy/>}/>
           <Route exact path='update-profile' element={<UpdateProfile/>}/>
+          <Route exact path='car-zone' element={<CarZone/>}/>
         </Route>
       </Routes>
     </div>

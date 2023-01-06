@@ -67,7 +67,7 @@ export default function ResponsiveGrid() {
             <DeleteIcon fontSize="large" />
           </div>
           <div className="text-div">
-            <Typography>Confirmed Orders</Typography>
+            <Typography>Cancelled Orders</Typography>
             <Typography>70 Order(s) <span style={{float: 'right'}}><ArrowForwardIcon sx={{float: 'right'}}/></span></Typography>
           </div>
         </div>

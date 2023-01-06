@@ -108,27 +108,41 @@ function MenuList() {
                             <ListItemText primary="Service Checklist" />
                         </ListItemButton>
                     </Link>
-                    <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Purchase Part" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Request Bookings" />
-                    </ListItemButton>
-                    <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Generate Report" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Renew Insurance" />
-                    </ListItemButton>
-                    <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="My Cars" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Report Theft" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Report Accident" />
-                    </ListItemButton>
+                    <Link to='/purchase-part'>
+                        <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Purchase Part" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/requested-bookings'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Request Bookings" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to='/generate-reports'>
+                        <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Generate Report" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/renew-insurance'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Renew Insurance" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/my-cars'}>
+                        <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="My Cars" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/report-theft'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Report Theft" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/report-accident'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Report Accident" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen2}>
@@ -137,24 +151,36 @@ function MenuList() {
             </ListItemButton>
             <Collapse in={open2} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Order Summary" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Pending Orders" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Requested Prices" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Accepted Orders" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Confirmed Orders" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Cancelled Orders" />
-                    </ListItemButton>
+                    <Link to={'/order-summary'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Order Summary" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/pending-orders'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Pending Orders" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/requested-prices'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Requested Prices" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/accepted-orders'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Accepted Orders" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/confirmed-orders'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Confirmed Orders" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/cancelled-orders'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Cancelled Orders" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen3}>
@@ -163,15 +189,21 @@ function MenuList() {
             </ListItemButton>
             <Collapse in={open3} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Post An Issue" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Vehicles Owner Forum" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Vehicle Reported Stolen" />
-                    </ListItemButton>
+                    <Link to={'/post-an-issue'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Post An Issue" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/vehicle-owner-forum'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Vehicles Owner Forum" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/vehicle-reported-stolen'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Vehicle Reported Stolen" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen4}>
@@ -186,29 +218,43 @@ function MenuList() {
                     </ListItemButton>
                     <Collapse in={open6} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
-                            <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 2 }}>
-                                <ListItemText primary="Feed" />
-                            </ListItemButton>
-                            <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 2 }}> 
-                                <ListItemText primary="Post an Article" />
-                            </ListItemButton>
+                            <Link to={'/feed'}>
+                                <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 2 }}>
+                                    <ListItemText primary="Feed" />
+                                </ListItemButton>
+                            </Link>
+                            <Link to={'/post-an-article'}>
+                                <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 2 }}> 
+                                    <ListItemText primary="Post an Article" />
+                                </ListItemButton>
+                            </Link>
                         </List>
                     </Collapse>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Emergency Services" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Traffic and Rules" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Specialist Services" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Car Financing" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Motor Vehicles Regulators" />
-                    </ListItemButton>
+                    <Link to={'/emergency-services'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Emergency Services" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/traffic-and-rules'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Traffic and Rules" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/specialist-services'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Specialist Services" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/car-financing'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Car Financing" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/motor-vehicles-regulators'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Motor Vehicles Regulators" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}} onClick={handleOpen5}>
@@ -217,26 +263,38 @@ function MenuList() {
             </ListItemButton>
             <Collapse in={open5} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Support" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="How it works" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Update Profile" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Profile" />
-                    </ListItemButton>
-                    <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
-                        <ListItemText primary="Terms And Privacy Policy" />
-                    </ListItemButton>
+                    <Link to={'/support'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Support" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/how-it-works'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="How it works" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/update-profile'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Update Profile" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/profile'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Profile" />
+                        </ListItemButton>
+                    </Link>
+                    <Link to={'/terms-and-privacy-policy'}>
+                        <ListItemButton sx={{ ':hover':{bgcolor: '#ed7f21'}, pl: 3 }}>
+                            <ListItemText primary="Terms And Privacy Policy" />
+                        </ListItemButton>
+                    </Link>
                 </List>
             </Collapse>
-            <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
-                <ListItemText primary="Subscription History" color='white'/>
-            </ListItemButton>
+            <Link to={'/subscription-history'}>
+                <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}}}>
+                    <ListItemText primary="Subscription History" color='white'/>
+                </ListItemButton>
+            </Link>
             <ListItemButton sx={{':hover':{bgcolor: '#ed7f21'}, pl: 1}}>
                 <LoginIcon/>
                 <ListItemText primary="Log out" color='white'/>

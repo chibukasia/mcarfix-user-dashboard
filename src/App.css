@@ -165,4 +165,6 @@ li:hover{
   flex-direction: row;
   /* flex-wrap: nowrap; */
   margin: 0 10px;
+  background-color: #b8b2b2e1;
+  margin-bottom: 20px;
 }

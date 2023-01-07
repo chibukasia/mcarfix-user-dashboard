@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import carpart from "../icons/carpart.png";
 import symptom from "../icons/breakdown.jpg";
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
+import FormModal from "./FormModal";
 
 function Problem() {
+  const [showMdal, setShowModal] = useState(false)
+  function handleModal(){
+    setShowModal(!showMdal)
+  }
   return (
     <div>
       <h2>Problem</h2>
@@ -11,19 +16,20 @@ function Problem() {
         <div className="card" style={{ width: "40%" }}>
           <img src={symptom} alt="Alps" style={{ width: "100%" }} />
           <div className="card-body">
-            <Button sx={{width: '100%', backgroundColor: "yellow"}}>Smells like</Button>
+            <Button sx={{width: '100%', backgroundColor: "#ed7f21"}} onClick={handleModal}><FormModal/></Button>
+            {/* {showMdal ? <FormModal/>: null} */}
           </div>
         </div>
         <div className="card" style={{ width: "40%" }}>
           <img src={symptom} alt="Alps" style={{ width: "100%" }} />
           <div className="card-body">
-            <Button sx={{width: '100%', backgroundColor: "yellow"}}>Smells like</Button>
+            <Button sx={{width: '100%', backgroundColor: "#ed7f21"}}><FormModal/></Button>
           </div>
         </div>
         <div className="card" style={{ width: "40%" }}>
           <img src={symptom} alt="Alps" style={{ width: "100%" }} />
           <div className="card-body">
-            <Button sx={{width: '100%', backgroundColor: "yellow"}}>Smells like</Button>
+            <Button sx={{width: '100%', backgroundColor: "#ed7f21"}}><FormModal/></Button>
           </div>
         </div>
 
@@ -36,7 +42,7 @@ function Problem() {
           />
           <div className="card-body">
             {/* <h4 className="card-title"></h4> */}
-            <Button sx={{width: '100%', backgroundColor: "yellow"}}>Smellls Like</Button>
+            <Button sx={{width: '100%', backgroundColor: "#ed7f21"}}><FormModal/></Button>
           </div>
         </div>
       </div>

@@ -122,12 +122,14 @@ li:hover{
  }
  .items-div{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
  }
  .item{
   /* width: 30%; */
   flex-direction: row;
   flex-wrap: wrap;
-  display: inline;
+  display: flex;
  }
  .image-div{
   float: left;

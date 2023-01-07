@@ -48,7 +48,39 @@ function Feautures() {
                     </Link>
                 </div>
             </div>
-            
+            <div className='item'>
+                <div className='image-div' >
+                    <img src={service} />
+                </div>
+                <div className='details'>
+                    <Link to={'/register-car'}>
+                        <h3>Register Your Car</h3>
+                        <p>Connect with part dealers</p>
+                    </Link>
+                </div>
+            </div>
+            <div className='item'>
+                <div className='image-div'>
+                    <img src={carpart}/>
+                </div>
+                <div className='details'>
+                    <Link to={'/part-dealers'}>
+                        <h3>Part Dealers</h3>
+                        <p>Connect with part dealers</p>
+                    </Link>
+                </div>
+            </div>
+            <div className='item'>
+                <div className='image-div' >
+                    <img src={symptom} />
+                </div>
+                <div className='details'>
+                    <Link to={'/part-dealers'}>
+                        <h3>Problem/Symptoms</h3>
+                        <p>Connect with part dealers</p>
+                    </Link>
+                </div>
+            </div>
         </div>
     </div>
   )
